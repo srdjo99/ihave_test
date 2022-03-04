@@ -1,0 +1,107 @@
+.hero,
+.header {
+  background-image: linear-gradient(#dfe3eb, #dfe3eb),
+    linear-gradient(#ebeff7, #ebeff7);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 28%, 72%;
+  background-position: top left, top right;
+}
+
+/* ===================== APPPLY ABOUT & ENJOY ===================== */
+
+.gallery > * {
+  @apply w-[118px] md:w-[80px];
+}
+
+.about,
+.enjoy {
+  @apply bg-no-repeat bg-cover bg-center;
+}
+
+.about__h {
+  @apply block relative text-center py-4 cursor-pointer after:content-['']  after:w-[0] after:h-[5px] after:bg-horange after:absolute after:-bottom-[1.75rem] after:left-[50%] after:transform after:-translate-x-[50%] after:transition-all hover:after:w-[140%];
+}
+
+/* ===================== APPLY PRODUCTS ===================== */
+
+.product__item > img {
+  @apply inline-block max-h-[394px];
+}
+
+.product__price {
+  @apply mt-4 font-o font-extralight text-orange text-2xl;
+}
+
+/* ===================== APPLY DELIVERY ===================== */
+
+.delivery__h > img {
+  @apply max-h-[670px];
+}
+
+/* ===================== TAILWIND APPLY ===================== */
+
+.btn {
+  @apply font-r font-bold text-m tracking-wider rounded-xl py-4 transition duration-300;
+}
+
+.btn--primary {
+  @apply bg-orange text-white px-20 hover:-translate-y-1 hover:bg-horange;
+}
+
+.btn--secondary {
+  @apply bg-transparent text-orange px-10 border-2 border-orange hover:-translate-y-1;
+}
+
+.desc {
+  @apply font-r font-normal text-s text-gray-400;
+}
+
+.sub-text {
+  @apply flex gap-2 font-r font-medium text-xs text-gray-400;
+}
+
+.h2 {
+  @apply font-o font-medium text-2xl text-black leading-tight;
+}
+
+.h3 {
+  @apply font-o font-medium text-black text-xl mt-6;
+}
+
+.form__text {
+  @apply font-r font-medium text-xs text-gray-600 flex gap-x-2;
+}
+
+.form__input {
+  @apply flex flex-col;
+}
+
+.form__input label {
+  @apply font-r font-medium text-s text-gray-400 text-left mb-px;
+}
+
+.input {
+  @apply bg-mix-gb-200 max-w-[400px] h-12 border  rounded border-mix-gb-300 text-s mb-5;
+}
+
+.input__text {
+  @apply h-64;
+}
+
+.footer__heading {
+  @apply font-r font-medium text-s text-gray-400 uppercase mb-4;
+}
+
+.footer__list li {
+  @apply font-r font-normal text-s text-gray-400 mb-4;
+}
+
+.footer__list--social li img {
+  @apply block w-6 h-6;
+}
+
+/* ===================== TAILWIND VARIANTS ===================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
