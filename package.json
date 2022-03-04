@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env TAILWIND_MODE=WATCH postcss tailwind.css -o ./src/css/styles.css --watch --verbose",
-    "prod": "NODE_ENV=production postcss tailwind.css -o ./src/css/styles.css"
+    "dev": "cross-env TAILWIND_MODE=WATCH postcss tailwind.css -o ./dist/css/styles.css --watch --verbose",
+    "prod": "NODE_ENV=production postcss tailwind.css -o ./dist/css/styles.css",
+    "build": "npx tailwindcss -i tailwind.css -o ./dist/css/style.css "
   },
   "keywords": [],
   "author": "",

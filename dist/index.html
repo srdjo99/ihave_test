@@ -14,18 +14,18 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header fixed top-0 w-full h-28 z-50">
+    <header class="fixed top-0 z-50 w-full header h-28">
       <div
         class="w-[1640px] 2xl:w-[1440px] xl:w-[1240px] lg:w-[1040px] xm:w-[840px] md:w-[540px] s:w-[440px] xs:w-[340px] absolute left-2/4 -translate-x-2/4 flex justify-between mx-auto"
       >
-        <div class="logobox mt-10">
+        <div class="mt-10 logobox">
           <a href=""
-            ><img src="../img/logo-main.png" alt="" class="h-12 xs:h-10"
+            ><img src="img/logo-main.png" alt="" class="h-12 xs:h-10"
           /></a>
         </div>
-        <nav class="nav h-12 flex justify-between mt-14">
+        <nav class="flex justify-between h-12 nav mt-14">
           <ul
-            class="flex gap-16 lg:gap-8 uppercase text-s font-r font-medium text-gray-400 tracking-wider nav__list xm:hidden"
+            class="flex gap-16 font-medium tracking-wider text-gray-400 uppercase lg:gap-8 text-s font-r nav__list xm:hidden"
           >
             <li class="">
               <a href="#home" class="">Početna</a>
@@ -36,10 +36,10 @@
             <li class=""><a href="#delivery" class="">Kontakt</a></li>
           </ul>
         </nav>
-        <div class="icons flex gap-8 mt-9 items-center justify-center xs:gap-4">
-          <a href=""><img src="../img/nav-search.svg" alt="" class="" /></a>
-          <a href=""><img src="../img/nav-cart.svg" alt="" class="" /></a>
-          <a href=""><img src="../img/nav-menu.svg" alt="" class="" /></a>
+        <div class="flex items-center justify-center gap-8 icons mt-9 xs:gap-4">
+          <a href=""><img src="img/nav-search.svg" alt="" class="" /></a>
+          <a href=""><img src="img/nav-cart.svg" alt="" class="" /></a>
+          <a href=""><img src="img/nav-menu.svg" alt="" class="" /></a>
         </div>
       </div>
     </header>
@@ -47,93 +47,96 @@
       <div
         class="max-w-[1640px] 2xl:w-[1440px] xl:w-[1240px] lg:w-[1040px] xm:w-[840px] md:w-[540px] s:w-[440px] xs:w-[325px] mx-auto xs:mx-6"
       >
-        <div class="content flex mt-32 xm:flex-col xm:mt-16">
+        <div class="flex mt-32 content xm:flex-col xm:mt-16">
           <div
-            class="content-fh basis-3/6 relative pb-28 lg:basis-5/12 xm:order-2 s:pb-0"
+            class="relative content-fh basis-3/6 pb-28 lg:basis-5/12 xm:order-2 s:pb-0"
           >
             <img
               class="hero__img absolute -top-12 left-28 xl:w-[80%] lg:w-[60%] lg:top-20 xm:w-[30%] left-[50%] -translate-x-[50%] xm:top-28 s:hidden"
-              src="../img/hero-img.png"
+              src="img/hero-img.png"
               alt=""
             />
             <div
               class="gallery flex flex-col gap-10 xm:flex-row xm:justify-center xs:grid xs:grid-cols-[100px_100px] xs:justify-start xs:mx-6 xs:w-[325px] s:gap-2"
             >
-              <img src="../img/sidebar-1.png" alt="" />
-              <img src="../img/sidebar-2.png" alt="" />
-              <img src="../img/sidebar-3.png" alt="" />
-              <img src="../img/sidebar-4.png" alt="" />
+              <img src="img/sidebar-1.png" alt="" />
+              <img src="img/sidebar-2.png" alt="" />
+              <img src="img/sidebar-3.png" alt="" />
+              <img src="img/sidebar-4.png" alt="" />
             </div>
           </div>
           <div
             class="content-sh basis-3/6 max-w-[530px] s:max-w-[340px] xs:max-w-[280px] lg:basis-7/12 xm:order-1 xm:mb-12"
           >
-            <div class="stars flex gap-1">
-              <svg class="icon icon-star-full w-5 h-5 fill-orange">
-                <use xlink:href="../img/sprite.svg#icon-star-full"></use>
+            <div class="flex gap-1 stars">
+              <svg class="w-5 h-5 icon icon-star-full fill-orange">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
               </svg>
-              <svg class="icon icon-star-full w-5 h-5 fill-orange">
-                <use xlink:href="../img/sprite.svg#icon-star-full"></use>
+              <svg class="w-5 h-5 icon icon-star-full fill-orange">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
               </svg>
-              <svg class="icon icon-star-full w-5 h-5 fill-orange">
-                <use xlink:href="../img/sprite.svg#icon-star-full"></use>
+              <svg class="w-5 h-5 icon icon-star-full fill-orange">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
               </svg>
-              <svg class="icon icon-star-full w-5 h-5 fill-orange">
-                <use xlink:href="../img/sprite.svg#icon-star-full"></use>
+              <svg class="w-5 h-5 icon icon-star-full fill-orange">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
               </svg>
-              <svg class="icon icon-star-full w-5 h-5 fill-gray-200">
-                <use xlink:href="../img/sprite.svg#icon-star-full"></use>
+              <svg class="w-5 h-5 icon icon-star-full fill-gray-200">
+                <use xlink:href="img/sprite.svg#icon-star-full"></use>
               </svg>
             </div>
-            <h1 class="font-o font-medium text-3xl text-gray-600">
+            <h1 class="text-3xl font-medium text-gray-600 font-o">
               A18 Wireless headset
             </h1>
             <p
-              class="font-r font-normal text-s text-gray-400 leading-normal mt-2"
+              class="mt-2 font-normal leading-normal text-gray-400 font-r text-s"
             >
               Large-size earmuffs that could cover the whole ears, paired with
               thick, soft, earmuffscan make it comfortable to immerse in music
               for a log time.
             </p>
             <div class="price--box mt-9">
-              <p class="font-o font-light text-2xl text-orange">41,99 KM</p>
+              <p class="text-2xl font-light font-o text-orange">41,99 KM</p>
             </div>
             <div class="btns flex gap-6 mt-12 s:flex-col s:w-[300px]">
               <button class="btn btn--primary">Kupi</button>
               <button class="btn btn--secondary">Dodaj u korpu</button>
             </div>
-            <div class="sub-text mt-4">
-              <img src="../img/user.svg" alt="" />
+            <div class="mt-4 sub-text">
+              <img src="img/user.svg" alt="" />
               <p>Trenutno 18 osoba gleda ovaj proizvod</p>
             </div>
-            <div class="sub-text mt-2">
-              <img src="../img/shield.svg" alt="" />
+            <div class="mt-2 sub-text">
+              <img src="img/shield.svg" alt="" />
               <p>Proizvod je dostupan na lageru</p>
             </div>
           </div>
           <div
-            class="socials flex flex-col gap-4 ml-auto mt-48 s:mt-12 xm:order-3 xm:flex-row xm:ml-0 xm:justify-center xm:mb-6 xs:justify-start xs:mx-6"
+            class="flex flex-col gap-4 mt-48 ml-auto socials s:mt-12 xm:order-3 xm:flex-row xm:ml-0 xm:justify-center xm:mb-6 xs:justify-start xs:mx-6"
           >
-            <img src="../img/fb.png" alt="" />
-            <img src="../img/ig.png" alt="" />
-            <img src="../img/linkedin.png" alt="" />
+            <img src="img/fb.png" alt="" />
+            <img src="img/ig.png" alt="" />
+            <img src="img/linkedin.png" alt="" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- ============ ABOUT ============ -->
-    <section class="about bg-[url('/img/about-img.png')] s:bg-left" id="about">
+    <section
+      class="about bg-[url('./../img/about-img.png')] s:bg-left"
+      id="about"
+    >
       <div class="max-w-[1640px] mx-auto">
         <div class="max-w-[606px] py-64 ml-8 s:max-w-[400px] s:mx-6">
           <div
-            class="about__heading font-o font-medium text-gray-600 tracking-wide text-m uppercase flex border-b-2 border-gray-300 px-4 pb-6 justify-between items-center s:pb-0"
+            class="flex items-center justify-between px-4 pb-6 font-medium tracking-wide text-gray-600 uppercase border-b-2 border-gray-300 about__heading font-o text-m s:pb-0"
           >
             <h4 class="about__h">Opis</h4>
             <h4 class="about__h">Specifikacije</h4>
             <h4 class="about__h">Ostalo</h4>
           </div>
-          <div class="about__description desc mt-8">
+          <div class="mt-8 about__description desc">
             <p class="mb-7">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -156,21 +159,24 @@
     </section>
 
     <!-- ============ ENJOY ============ -->
-    <section class="enjoy bg-[url('/img/enjoy-img.png')] s:bg-right" id="enjoy">
+    <section
+      class="enjoy bg-[url('./../img/enjoy-img.png')] s:bg-right"
+      id="enjoy"
+    >
       <div class="max-w-[1660px] flex mx-auto s:mx-6">
         <div class="empty basis-3/6 s:hidden"></div>
         <div
           class="enjoy__content max-w-[578px] py-60 basis-3/6 lg:mr-6 s:basis-full"
         >
-          <h2 class="h2 mb-6">Iskoristiti momente uživanja, na pravi način</h2>
-          <p class="enjoy__desc desc mb-10">
+          <h2 class="mb-6 h2">Iskoristiti momente uživanja, na pravi način</h2>
+          <p class="mb-10 enjoy__desc desc">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud eercitation ullamco laboris nisi ut
             aliquip. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <div class="btns flex gap-5 xm:flex-col">
+          <div class="flex gap-5 btns xm:flex-col">
             <button class="btn btn--primary">Kupi</button>
             <button class="btn btn--secondary">Dodaj u korpu</button>
           </div>
@@ -180,7 +186,7 @@
 
     <!-- ============ PRODUCTS ============ -->
     <section class="products bg-mix-gb-100" id="products">
-      <div class="products__heading text-center pt-32 s:mx-6">
+      <div class="pt-32 text-center products__heading s:mx-6">
         <h2 class="h2">Povezani proizvodi</h2>
         <p class="max-w-[600px] mx-auto desc leading-normal mt-6">
           Large-size earmuffs that could cover the whole ears, paired with
@@ -192,22 +198,22 @@
         class="products__gallery max-w-[1640px] mt-16 flex text-center mx-auto pb-28 items-center justify-center lg:grid lg:grid-cols-2 lg:gap-y-10 s:grid-cols-1 s:mx-6"
       >
         <div class="product__item">
-          <img src="../img/products--img-1.png" alt="" />
+          <img src="img/products--img-1.png" alt="" />
           <h3 class="h3">Casque Bluetooth DeFunc</h3>
           <p class="product__price">39,99 KM</p>
         </div>
         <div class="product__item">
-          <img src="../img/products--img-2.png" alt="" />
+          <img src="img/products--img-2.png" alt="" />
           <h3 class="h3">Inkax HP-07</h3>
           <p class="product__price">50,99 KM</p>
         </div>
         <div class="product__item">
-          <img src="../img/products--img-3.png" alt="" />
+          <img src="img/products--img-3.png" alt="" />
           <h3 class="h3">l'avvento(HP07N)</h3>
           <p class="product__price">60,99 KM</p>
         </div>
         <div class="product__item">
-          <img src="../img/products--img-4.png" alt="" />
+          <img src="img/products--img-4.png" alt="" />
           <h3 class="h3">Bluetooth inkax HP-05</h3>
           <p class="product__price">41,99 KM</p>
         </div>
@@ -224,14 +230,14 @@
       <div
         class="delivery__content max-w-[1640px] mx-auto flex md:grid md:grid-rows-[max-content_380px] s:grid-rows-[max-content_300px]"
       >
-        <div class="delivery__fh basis-3/6 relative row-start-2 row-end-3">
+        <div class="relative row-start-2 row-end-3 delivery__fh basis-3/6">
           <img
-            src="../img/delivery-img.png"
+            src="img/delivery-img.png"
             alt=""
             class="delivery__img absolute top-24 right-0 md:w-[35%] md:right-[50%] md:translate-x-[50%] md:top-16"
           />
         </div>
-        <div class="delivery__sh basis-3/6 row-start-1 row-end-2">
+        <div class="row-start-1 row-end-2 delivery__sh basis-3/6">
           <form action="#" class="form w-[400px] md:mx-auto xs:w-[280px]">
             <div class="form__input">
               <label for="name">Ime i prezime</label>
@@ -280,7 +286,7 @@
               Kupi
             </button>
             <div
-              class="form__text pb-32 text-gray-400 mt-2 justify-center md:pb-0"
+              class="justify-center pb-32 mt-2 text-gray-400 form__text md:pb-0"
             >
               <img src="../img/shield.svg" alt="" />
               <p class="">Vaša kupovina je sigurna.</p>
@@ -303,13 +309,13 @@
             <li>Email: info@simel-bih.com</li>
             <li>Skype:simel-bih</li>
           </ul>
-          <div class="cta flex gap-x-2 mt-8">
+          <div class="flex mt-8 cta gap-x-2">
             <img src="../img/headphones.png" alt="" />
             <div>
-              <p class="font-r font-normal text-tiny text-gray-400">
+              <p class="font-normal text-gray-400 font-r text-tiny">
                 Pozovite nas!
               </p>
-              <p class="font-r font-bold text-s text-gray-400">
+              <p class="font-bold text-gray-400 font-r text-s">
                 + 387 51 535 560
               </p>
             </div>
@@ -334,7 +340,7 @@
         </div>
         <div class="footer__item xm:justify-self-center xs:justify-self-start">
           <h5 class="footer__heading">Socijalne mreže</h5>
-          <ul class="footer__list--social flex gap-x-2 mb-11">
+          <ul class="flex footer__list--social gap-x-2 mb-11">
             <li><img src="../img/fb.png" alt="" /></li>
             <li><img src="../img/ig.png" alt="" /></li>
             <li><img src="../img/linkedin.png" alt="" /></li>
@@ -342,7 +348,7 @@
           <img
             src="../img/logo-footer.png"
             alt=""
-            class="footer__logo w-28 h-8"
+            class="h-8 footer__logo w-28"
           />
         </div>
       </div>
